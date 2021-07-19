@@ -1,0 +1,79 @@
+*{
+	padding: 0px;
+}
+
+header{
+	font-family: 'Shrikhand';
+}
+body{
+	font-family: 'Roboto';
+}
+
+
+
+
+.header{
+	align-items: center;
+
+}
+
+.localisation{
+    ;
+}
+
+.localisationHeader{
+	background-color: #F6F6F6;
+
+}
+
+.localisationHeaderParis{
+	background-color: #EAEAEA;
+	text-align: center;
+	padding: 20px;
+	
+}
+
+
+.localisationHeaderTitle{
+	text-align: center;
+}
+
+
+.localisationHeaderSubtitle{
+	text-align: center;
+}
+
+
+.localisationHeaderParisIcon{
+	display: inline flex;
+	align-items: center;
+
+}
+
+
+
+.filter{
+	
+}
+
+.filterfilter{
+   display: flex;
+   justify-content: center;
+
+}
+
+
+.filterfilterTitle {
+	 align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #9356DC;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+    margin: 0.1rem;
+    padding: 1rem 5rem
+}
+
+   
