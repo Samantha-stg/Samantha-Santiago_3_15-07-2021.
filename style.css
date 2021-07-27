@@ -11,43 +11,100 @@ body{
 
 
 
+/*===LOGO===*/
 
-.header{
-	text-align:center;
+.header{}
 
-}
+.header_logo{}
 
-.localisation{
-    ;
-}
+/*===LOGO===*/
 
-.localisationHeader{
-	background-color: #F6F6F6;
+/*===Localisation===*/
 
-}
+.main {}
 
-.localisationHeaderParis{
-	background-color: #EAEAEA;
-	text-align: center;
-	padding: 20px;
-	
-}
+.localisation{}
+
+.localisation_icon{}
+
+.localisation_city{}
+
+/*===Localisation===*/
+
+/*===Reservez===*/
+
+.reservez{}
+
+.reservez_container{}
+
+.reservez_title{}
+
+.reservez_Subtitle{}
+
+.Reservez_button{}
+
+/*===Reservez===*/
+
+/*===Fonctionnement===*/
+
+.Fonctionnement_liste{}
+
+.Fonctionnement{}
+
+.Fonctionnement_title{}
+
+.Listes{}
+
+.Liste{}
+
+.Liste_1{}
+
+.Liste_2{}
+
+.Liste_3{}
+
+.Liste_icon{}
+
+.Liste_text{}
+
+/*===Fonctionnement===*/
+
+/*===Restaurant===*/
+
+.restaurants{}
+
+.restaurants_title{}
+
+.restaurants_card{}
+
+/*===Restaurant===*/
 
 
-.localisationHeaderTitle{
-	text-align: center;
-}
+.restaurant_card{}
+
+.restaurant_card_new{}
+
+.restaurant_card_img{}
+
+.restaurant_block{}
+
+.restaurant_block_info{}
+
+.restaurant_block_title{}
+
+.restaurant_block_city{}
 
 
-.localisationHeaderSubtitle{
-	text-align: center;
-}
+/*===Footer===*/
 
+.footer{}
 
-.localisationHeaderParisIcon{
-	display: inline flex;
-	align-items: center;
+.footer_bloc{}
 
-}
+.footer_bloc_links{}
 
+.footer_bloc_link{}
 
+.footer_bloc_link_title{}
+
+/*===Footer===*/
