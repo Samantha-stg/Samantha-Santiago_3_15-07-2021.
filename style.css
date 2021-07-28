@@ -4,9 +4,7 @@ body {
   background: #f6f6f6;
 }
 
-*{
-	font-family: 'Roboto', sans-serif; !important;
-}
+
  
  * a {
  	text-decoration: none;
@@ -132,6 +130,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	font-weight: bold;
 }
 
 
@@ -154,7 +153,7 @@ body {
 	color: white;
 	padding: 3px 8px 3px 8px;
 	border-radius: 500px;
-	margin-left: -12px;
+	margin-left: -23px;
 }
 
 .Liste_2{
@@ -162,7 +161,7 @@ body {
 	color: white;
 	padding: 3px 8px 3px 8px;
 	border-radius: 500px;
-	margin-left: -12px;
+	margin-left: -23px;
 }
 
 .Liste_3{
@@ -170,7 +169,7 @@ body {
 	color: white;
 	padding: 3px 8px 3px 8px;
 	border-radius: 500px;
-	margin-left: -12px;
+	margin-left: -23px;
 }
 
 .Liste_icon{
