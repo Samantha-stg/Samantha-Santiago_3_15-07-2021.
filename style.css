@@ -29,6 +29,8 @@ body {
 	align-items: center;
 	height: 80px;
 	width: 100%;
+	box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
+	background: white;
 }
 
 .header_logo{
@@ -46,7 +48,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #f3f3f3;
 	color: #7a7a7a;
 
 
@@ -87,6 +88,7 @@ body {
 
 .reservez_Subtitle{
 	text-align: center;
+	font-size: large;
 }
 
 .Reservez_button{
@@ -95,7 +97,7 @@ body {
 	color: white;
 	padding: 0 20px;
 	border-radius: 200px;
-	box-shadow: 0px 0px 10px 0px rgb(0, 0, 0/30%);
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
 }
  
 
@@ -131,6 +133,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	font-weight: bold;
+	margin-top: 20px;
 }
 
 
@@ -143,9 +146,7 @@ body {
 	margin: 10px 20px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
-
-
-
+	padding: 10px;
 }
 
 .Liste_1{ 
@@ -179,6 +180,8 @@ body {
 
 .fa, .fas {
 	font-weight: 900;
+	font-size: larger;
+	margin: 10px;
 }
 
 /*===Fonctionnement===*/
@@ -203,7 +206,10 @@ body {
 	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
-	padding: 20px;}
+	padding: 20px;
+	margin-top: -20px;
+	width: 89%;
+}
 
 /*===Restaurant===*/
 
@@ -213,8 +219,10 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	width: 100%;
+	width: 115%;
 	border-radius: 20px;  
+	content-visibility: auto;
+	margin-left: -25px;
 }
 
 .restaurant_card_new{
@@ -228,14 +236,15 @@ body {
 }
 
 .restaurant_card_new p{
-	color: #1b6150;
+	color: #008766;
 	padding: 10px 20px;
 	margin: 0;
+	font-weight: bold;
 }
 
 .restaurant_card_img{
 	width: 100%;
-	height: 190px;
+	height: 160px;
 }
 
 .restaurant_card_img > img {
@@ -263,10 +272,6 @@ body {
 
 .restaurant_block_title{
 	font-weight: 700;
-}
-
-.restaurant_block_city{
-
 }
 
 
@@ -308,8 +313,8 @@ body {
 
 .footer_bloc_link_title{
 	font-size: 16px;
-	font-weight: 400px;
 	color: white;
+	font-weight: 500;
 }
 
 .logoOMF{
@@ -319,3 +324,67 @@ body {
 	padding: 15px 0;
 }
 /*===Footer===*/
+
+
+/*===Media===*/
+
+@media screen and (min-width: 800px){
+	.Listes{
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.Liste{
+		width: 100%;
+	}
+
+	.restaurants_card{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.restaurant_card{
+		width: 100%;
+	}
+
+	.footer_bloc{
+		margin-bottom: 15px;
+	}
+
+	.footer_bloc_links{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		max-width: 900px;
+	}
+
+	.Reservez_button:hover{
+		cursor: pointer;
+		opacity: 0.7;
+		transition: .3s;
+	}
+
+	.Liste:hover{
+		cursor: pointer;
+		background-color: white;
+		transition: .3s;
+	}
+
+	.restaurant_card:hover{
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgb(147,86,220,1);
+		transform: scale(1.03);
+    transition: ease 0.4s;
+	}
+
+  .footer_bloc_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+
