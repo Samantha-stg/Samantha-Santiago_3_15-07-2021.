@@ -1,0 +1,255 @@
+body {
+  font-family: 'Roboto', sans-serif ;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+
+ 
+ * a {
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+
+
+
+/*===LOGO===*/
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: white;
+}
+
+.header_logo{
+  font-family: 'Shrikhand', cursive;
+  margin: 0;
+  color: black;
+}
+
+.header .header_arrow_back{
+  width: 50px;
+  font-size: 20px;
+  margin-left: -10%;
+
+}
+.header .header_arrow_back a {
+  color: black;
+}
+/*===LOGO===*/
+
+
+
+.img{
+  width: 100%;
+  height: 50vh;
+
+}
+
+.img_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fa,.fas{
+  font-weight: 900;
+  margin-left: -60%;
+}
+
+
+
+.menu{
+  margin-top: -200px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1230px;
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+}
+
+.menu_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_header_title{
+  font-family: 'Shrikhand', cursive;
+}
+
+
+/*=== ENTRÉES===*/
+.entrées_liste{
+  padding: 25px 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.entrées{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.entrées_title{
+  margin: 0;
+}
+/*===ENTRÉES===*/
+
+.Listes{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.Liste{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: auto;
+  width: auto;
+  margin: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+  padding: 10px;
+
+}
+
+/*===PLATS===*/
+.plats_liste{
+  padding: 25px 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plats{
+  padding: 25px 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plats_title{
+  margin: 0;
+}
+/*===PLATS===*/
+
+/*===DESSERTS===*/
+.desserts_liste{
+  padding: 25px 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desserts{
+  width: 95%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.desserts_title{
+  margin: 0;
+}
+/*===DESSERTS===*/
+
+
+
+
+
+
+
+
+.commander{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commander_bouton{
+  opacity: 1;
+  background: linear-gradient(180deg,#ff79da 0%,#9356dc 100%);
+  color: white;
+  padding: 0 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+  font-size: 18px;
+  margin: 50px 0;
+}
+
+
+/*===Footer===*/
+
+.footer{
+  width: 100%;
+  background-color:#353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer_bloc{
+  display: inline;
+  padding: 0 40px;
+  width : 100%;
+  max-width: 1200px;
+
+}
+
+.footer_bloc_links{
+  display: inline-flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.footer_bloc_link{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+
+}
+
+.footer_bloc_link_title{
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.logoOMF{
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+}
+/*===Footer===*/
