@@ -103,6 +103,36 @@ body {
 
 /*===Reservez===*/
 
+
+.restaurant__block .heart-emply {
+	width: 50px;
+	position: relative;
+}
+
+.restaurant__block-heart .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+ 
+}
+
+.restaurant__block-heart .heart-full{
+  position: absolute; 
+  stroke: none;
+}
+
+.restaurant__block-heart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	width: 30px;
+}
+
+
+
 /*===Fonctionnement===*/
 
 .Fonctionnement_liste{
