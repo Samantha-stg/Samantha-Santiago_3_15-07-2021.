@@ -14,6 +14,7 @@ body {
 
 h3 {
   font-weight: 100;
+ 
 }
 
 p {
@@ -97,15 +98,7 @@ div:first-child{
 
 
 
-.menu_liste_title h3::after {
-  content: '';
-  width: 50px;
-  height: 4px;
-  background: #99e2d0;
-  position: absolute;
-  z-index: 20;
-  left: 0px;
-  bottom: -8px;
+
 
 
 }
@@ -165,7 +158,11 @@ div:first-child{
   box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
 }
 
-
+.menu_liste_title h3{
+  border-bottom: solid;
+  border-bottom-color:#99e2d0;
+  width: 11%; 
+}
 
 .menu_header_Subtitle{
   font-weight: 500;
@@ -326,6 +323,10 @@ div:first-child{
     margin-left: 1000%;
   }
 
+  .footer_bloc_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
 }
 
