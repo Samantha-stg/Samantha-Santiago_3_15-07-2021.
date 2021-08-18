@@ -224,6 +224,7 @@ div:first-child{
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
   font-size: 18px;
   margin: 50px 0;
+  cursor: pointer;
 }
 
 
@@ -281,7 +282,7 @@ div:first-child{
 @media screen and (min-width: 1100px){
   .menu {
     margin-top: -60px;
-    padding-right: 90%;
+    max-width: none;
   }
 
   .img{
@@ -318,16 +319,50 @@ div:first-child{
 
   }
 
+  .menu__header__heart .heart-emply{
+
+  }
+
   .menu__header__heart  {
     width: 30px;
-    margin-left: 1000%;
   }
+
+
+  .menu__header__heart
 
   .footer_bloc_link:hover {
     cursor: pointer;
     text-decoration: underline;
   }
 
+}
+
+
+.Chargement {
+  /* Création du loader*/
+
+  border: 10px solid #9356dc;
+  border-top: 10px solid #ff79da;  
+  border-bottom: 10px solid #99e2d0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+
+ /* placement du loader au mileu de la page */
+
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
