@@ -52,28 +52,26 @@ p {
 /*===LOGO===*/
 
 
-.menu__header__heart .heart_full {
-  width: 30px;
-  stroke-width: 30;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
-}
 
-.heart_full i{
+/*=== COEUR ===*/
+
+.Heart_2{
   font-size: 35px;
-  position: absolute; 
+  position: absolute;
+  z-index: 2;
 }
 
-.heart_emply i{
+.Heart_1{
   font-size: 35px;
-  color: white;
+  z-index: 1;
+  transform: scale(0);
+  background: -webkit-linear-gradient(175deg,#ff79da 10%,#9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparant;
 }
 
-.menu__header__heart heart_emply:hover {
-  opacity: 0;
-  transition: 0.5s;
-}
+
+/*=== COEUR ===*/
 
 div:first-child{
   opacity: .99;
@@ -199,14 +197,7 @@ div:first-child{
   padding-left: 7px;
 }
 
-.validation_box{
-  display: none;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  right: 0px;
-  padding: 0 13px;
-  height: 100%;
-}
+
 
 
   .menu_liste_choix{
@@ -225,18 +216,23 @@ div:first-child{
 
 
 
-  .menu_liste_choix .validation_box{
-    display: none;
-    position: absolute;
+  .validation_box{
+    position: relative;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
     padding: 0 13px;
-    height: 100%;
+    height: 70px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: right;
+    font-size: 18px;
   }
 
   .menu_liste_choix .validation_box i{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     transform: rotate(180deg);
     animation: rotate 0.5s both;
@@ -408,4 +404,25 @@ div:first-child{
 }
 
 
+@-webkit-keyframes validation_box {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+@keyframes validation_box {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
 
