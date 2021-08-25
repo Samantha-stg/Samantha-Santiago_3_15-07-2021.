@@ -314,17 +314,38 @@ div:first-child{
     max-width: 900px;
   }
 
-  .menu__header__heart .heart-full{
+  .heart_full i{
+    font-size: 35px;
     position: absolute;
+    background-clip: content-box;
+  }
+     
 
+
+  .heart_emply i {
+    font-size: 35px;
+    color: white;
   }
 
-  .menu__header__heart .heart-emply{
+  .menu__header__heart .heart_full {
+    
+    
+}
+  }
+
+
+  .menu__header__heart .heart_emply{
+    
+
+  
+
 
   }
 
   .menu__header__heart  {
     width: 30px;
+  }
+
   }
 
 
@@ -335,41 +356,29 @@ div:first-child{
     text-decoration: underline;
   }
 
+  .menu_liste_choix .validation_box{
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+  }
+
+  .menu_liste_choix .validation_box i{
+    font-size: 30px;
+    color: white;
+    transform: rotate(180deg);
+    animation: rotate 0.5s both;
+  }
+
+
+
+
+
+
 }
 
 
-.loading {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.loading:after {
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 32px solid transparent;
-    border-bottom-color: #ff79ac;
-    border-top-color: #9356dc;
-    animation: loading 2s linear;
-    z-index: 10
-}
-
-@keyframes loading {
-  0% {
-    transform: rotate(1 turn);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    transform: rotate(1800deg);
-  }
-}
 
