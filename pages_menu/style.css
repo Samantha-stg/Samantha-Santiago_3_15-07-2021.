@@ -52,7 +52,7 @@ p {
 /*===LOGO===*/
 
 
-.menu__header__heart .heart {
+.menu__header__heart .heart_full {
   width: 30px;
   stroke-width: 30;
   stroke: black;
@@ -60,12 +60,19 @@ p {
   cursor: pointer;
 }
 
-.menu__header__heart .heart-full{
+.heart_full i{
+  font-size: 35px;
   position: absolute; 
 }
 
-.menu__header__heart .heart-emply{
-  position: relative;
+.heart_emply i{
+  font-size: 35px;
+  color: white;
+}
+
+.menu__header__heart heart_emply:hover {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 div:first-child{
@@ -127,6 +134,7 @@ div:first-child{
   font-family: 'Shrikhand', cursive;
 }
 
+ 
 
 
 .menu_liste{
@@ -200,6 +208,55 @@ div:first-child{
   height: 100%;
 }
 
+
+  .menu_liste_choix{
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+    animation-fill-mode: both;
+  }
+
+
+
+  .menu_liste_choix .validation_box{
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+  }
+
+  .menu_liste_choix .validation_box i{
+    font-size: 30px;
+    color: white;
+    transform: rotate(180deg);
+    animation: rotate 0.5s both;
+  }
+
+  #choix-1{
+    animation-delay: 0.1s;
+  }
+
+  #choix-2{
+    animation-delay: 0.2s;
+  }
+
+  #choix-3{
+    animation-delay: 0.3s;
+  }
+
+  .apparition{
+    animation: opacity 1s both;
+  }
 .menu_liste_block .validation_box i {
   font-size: 30px;
   color: white;
@@ -314,38 +371,29 @@ div:first-child{
     max-width: 900px;
   }
 
-  .heart_full i{
+  .heart_full i {
     font-size: 35px;
     position: absolute;
     background-clip: content-box;
+  
   }
-     
-
 
   .heart_emply i {
     font-size: 35px;
     color: white;
   }
 
-  .menu__header__heart .heart_full {
-    
-    
-}
-  }
-
-
-  .menu__header__heart .heart_emply{
-    
-
   
-
-
-  }
 
   .menu__header__heart  {
     width: 30px;
   }
 
+  .menu__header__heart::before{
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    background: linear-gradient(0deg,#9356dc,#ff79da);
   }
 
 
@@ -355,27 +403,6 @@ div:first-child{
     cursor: pointer;
     text-decoration: underline;
   }
-
-  .menu_liste_choix .validation_box{
-    display: none;
-    position: absolute;
-    background: #99E2D0;
-    border-radius: 0 15px 15px 0;
-    right: 0px;
-    padding: 0 13px;
-    height: 100%;
-  }
-
-  .menu_liste_choix .validation_box i{
-    font-size: 30px;
-    color: white;
-    transform: rotate(180deg);
-    animation: rotate 0.5s both;
-  }
-
-
-
-
 
 
 }
