@@ -57,19 +57,33 @@ p {
 
 .Heart_2{
   font-size: 35px;
-  position: absolute;
+  
   z-index: 2;
 }
 
 .Heart_1{
   font-size: 35px;
   z-index: 1;
-  transform: scale(0);
-  background: -webkit-linear-gradient(175deg,#ff79da 10%,#9356dc 100%);
+  display: none;
+  background:linear-gradient(#ff79da,#9356dc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparant;
+  color: transparent;
 }
 
+
+.menu__header__heart  {
+    width: 35px;
+  }
+
+
+.menu__header__heart:hover .Heart_2{
+  display: none;
+
+}  
+
+.menu__header__heart:hover .Heart_1{
+  display: block;
+}
 
 /*=== COEUR ===*/
 
@@ -101,12 +115,6 @@ div:first-child{
   font-size: 20px;
 }
 
-
-
-
-
-
-}
 
 
 #menu{
@@ -236,6 +244,14 @@ div:first-child{
     color: white;
     transform: rotate(180deg);
     animation: rotate 0.5s both;
+  }
+
+  .menu_liste_choix:hover .validation_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-left 0.5 ease;
+    transform-origin: right;
   }
 
   #choix-1{
@@ -381,9 +397,7 @@ div:first-child{
 
   
 
-  .menu__header__heart  {
-    width: 30px;
-  }
+  
 
   .menu__header__heart::before{
     opacity: 0;
@@ -393,7 +407,7 @@ div:first-child{
   }
 
 
-  .menu__header__heart
+  
 
   .footer_bloc_link:hover {
     cursor: pointer;

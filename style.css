@@ -131,7 +131,11 @@ body {
 	width: 30px;
 }
 
-
+.Reservez_button:hover{
+	cursor: pointer;
+    opacity: 0.7;
+    transition: .3s;
+}
 
 /*===Fonctionnement===*/
 
