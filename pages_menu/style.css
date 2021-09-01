@@ -233,17 +233,12 @@ div:first-child{
 
 
   .validation_box{
-    position: relative;
+    position: absolute;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
     padding: 0 13px;
     height: 70px;
-    width: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-origin: right;
     font-size: 18px;
   }
 
@@ -301,6 +296,10 @@ div:first-child{
 
   #choix-9{
     animation-delay: 0.9s;
+  }
+
+  #choix-10{
+    animation-delay: 0.10s;
   }
 
   .apparition{
