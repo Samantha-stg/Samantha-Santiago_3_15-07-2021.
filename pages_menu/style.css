@@ -233,13 +233,20 @@ div:first-child{
 
 
   .validation_box{
-    position: absolute;
+    position: relative;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
     padding: 0 13px;
     height: 70px;
+    width: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform-origin: right;
     font-size: 18px;
+    
+
   }
 
   .menu_liste_choix .validation_box i{
