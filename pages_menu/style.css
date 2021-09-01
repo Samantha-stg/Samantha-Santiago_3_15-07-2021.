@@ -68,6 +68,7 @@ p {
   background:linear-gradient(#ff79da,#9356dc);
   -webkit-background-clip: text;
   color: transparent;
+
 }
 
 
@@ -76,13 +77,20 @@ p {
   }
 
 
-.menu__header__heart:hover .Heart_2{
+.menu__header__heart:hover .Heart_2 {
   display: none;
-
+  opacity: 1; 
 }  
 
-.menu__header__heart:hover .Heart_1{
+.menu__header__heart:hover .Heart_1 {
   display: block;
+  transition: 0.5s;
+}
+
+
+.Heart_2:hover{
+  opacity: 0;
+  transition: 0.5s;
 }
 
 /*=== COEUR ===*/
@@ -254,6 +262,11 @@ div:first-child{
     transform-origin: right;
   }
 
+  .menu_liste_choix:hover .menu_case_prix{
+    padding-right: 70px;
+    transition: 0.5s ease;
+  }
+
   #choix-1{
     animation-delay: 0.1s;
   }
@@ -264,6 +277,30 @@ div:first-child{
 
   #choix-3{
     animation-delay: 0.3s;
+  }
+
+  #choix-4{
+    animation-delay: 0.4s;
+  }
+
+  #choix-5{
+    animation-delay: 0.5s;
+  }
+
+  #choix-6{
+    animation-delay: 0.6s;
+  }
+
+  #choix-7{
+    animation-delay: 0.7s;
+  }
+
+  #choix-8{
+    animation-delay: 0.8s;
+  }
+
+  #choix-9{
+    animation-delay: 0.9s;
   }
 
   .apparition{
@@ -440,3 +477,64 @@ div:first-child{
   }
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+            transform: scaleX(-50px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+            transform: scaleX(-50px);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
