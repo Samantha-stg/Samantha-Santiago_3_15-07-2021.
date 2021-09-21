@@ -106,9 +106,10 @@ body {
 /*===COEUR===*/
 
 .Heart_2{
-  font-size: 35px;
+  font-size: 40px;
   z-index: 2;
   color: black;
+  margin-top: 55px;
 }
 
 .Heart_1{
@@ -122,30 +123,28 @@ body {
 }
 
 
-.menu__header__heart  {
-    width: 75px;
-  }
-
 
 .menu__header__heart:hover .Heart_2 {
   display: none;
   opacity: 1; 
+  top: -35px;
 }  
 
 .menu__header__heart .Heart_1 {
   position: relative;
-  top: -35px;
+  top: -50px;
   display: block;
   opacity: 0;
   transition: opacity 0.5s;
-  font-size: 45px;
+  font-size: 40px;
+  right: 9.5px;
 
 }
 
 .menu__header__heart:hover .Heart_1{
   opacity: 1;
   position: relative;
-  top: -17px;
+  top: -0.5px;
 }
 /*.Heart_1:hover{
   opacity: 1;
@@ -272,9 +271,9 @@ body {
 	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
-	padding: 20px;
+	padding-top: 20px;
 	margin-top: -20px;
-	width: 89%;
+	width: 105%;
 }
 
 /*===Restaurant===*/
