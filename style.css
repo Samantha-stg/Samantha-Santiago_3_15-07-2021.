@@ -103,33 +103,56 @@ body {
 
 /*===Reservez===*/
 
+/*===COEUR===*/
 
-.restaurant__block .heart-emply {
-	width: 50px;
-	position: relative;
+.Heart_2{
+  font-size: 35px;
+  z-index: 2;
+  color: black;
 }
 
-.restaurant__block-heart .heart {
-  width: 30px;
-  stroke-width: 30;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
- 
+.Heart_1{
+  font-size: 35px;
+  z-index: 1;
+  display: none;
+  background:linear-gradient(#ff79da,#9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
 
-.restaurant__block-heart .heart-full{
-  position: absolute; 
-  stroke: none;
+
+.menu__header__heart  {
+    width: 75px;
+  }
+
+
+.menu__header__heart:hover .Heart_2 {
+  display: none;
+  opacity: 1; 
+}  
+
+.menu__header__heart .Heart_1 {
+  position: relative;
+  top: -35px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 45px;
+
 }
 
-.restaurant__block-heart{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	width: 30px;
+.menu__header__heart:hover .Heart_1{
+  opacity: 1;
+  position: relative;
+  top: -17px;
 }
+/*.Heart_1:hover{
+  opacity: 1;
+  transition: 0.5s;
+}*/
+
+/*==== COEUR ====*/
 
 .Reservez_button:hover{
 	cursor: pointer;
@@ -393,6 +416,20 @@ body {
 	.restaurant_card{
 		width: 100%;
 	}
+
+
+	.heart_full i {
+    font-size: 35px;
+    position: absolute;
+    background-clip: content-box;
+  
+  }
+
+  .heart_emply i {
+    font-size: 35px;
+    color: white;
+  }
+
 
 	.footer_bloc{
 		margin-bottom: 15px;
