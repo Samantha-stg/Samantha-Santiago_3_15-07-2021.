@@ -7,14 +7,20 @@ body {
 
  
  * a {
- 	text-decoration: none;
- 	color: white;
+  text-decoration: none;
+  color: white;
  }
 
 
 h3 {
   font-weight: 100;
  
+}
+
+h4 {
+  font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 p {
@@ -82,16 +88,24 @@ p {
   opacity: 1; 
 }  
 
-.menu__header__heart:hover .Heart_1 {
+.menu__header__heart .Heart_1 {
+  position: relative;
+  top: -35px;
   display: block;
-  transition: 0.5s;
-}
-
-
-.Heart_2:hover{
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s;
+
 }
+
+.menu__header__heart:hover .Heart_1{
+  opacity: 1;
+  position: relative;
+  top: -17px;
+}
+/*.Heart_1:hover{
+  opacity: 1;
+  transition: 0.5s;
+}*/
 
 /*=== COEUR ===*/
 
@@ -211,6 +225,9 @@ div:first-child{
   padding-right: 20px;
   font-weight: bold;
   padding-left: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -237,15 +254,15 @@ div:first-child{
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
-    padding: 0 13px;
+    padding: 0 30px;
     height: 70px;
     width: 10%;
     display: none;
     justify-content: center;
     align-items: center;
-    transform-origin: right;
+    transform-origin: left;
     font-size: 18px;
-    
+    margin-right: -70px;
 
   }
 
@@ -267,6 +284,7 @@ div:first-child{
   .menu_liste_choix:hover .menu_case_prix{
     padding-right: 70px;
     transition: 0.5s ease;
+    animation: slide-left;
   }
 
   #choix-1{
@@ -306,7 +324,7 @@ div:first-child{
   }
 
   #choix-10{
-    animation-delay: 0.10s;
+    animation-delay: 1.0s;
   }
 
   .apparition{
@@ -391,6 +409,12 @@ div:first-child{
 /*===Footer===*/
 
 
+.commander_bouton:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: .3s;
+}
+
 @media screen and (min-width: 1100px){
   .menu {
     margin-top: -60px;
@@ -439,7 +463,11 @@ div:first-child{
   }
 
   
-
+.commander_bouton:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: .3s;
+}
   
 
   .menu__header__heart::before{
@@ -461,16 +489,6 @@ div:first-child{
 }
 
 
-@-webkit-keyframes validation_box {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-}
 
 @keyframes validation_box {
   0% {
@@ -478,63 +496,36 @@ div:first-child{
             transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+
+
+@keyframes rotate {
+  0% {
+            transform: rotate(0);
+  }
+  100% {
+            transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
   }
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
-}
-
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 @keyframes opacity {
   0% {
@@ -543,4 +534,9 @@ div:first-child{
   100% {
     opacity: 1;
   }
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
