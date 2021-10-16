@@ -21,12 +21,14 @@ h4 {
   font-weight: 100;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 5px;
 }
 
 p {
   overflow: hidden;
   text-overflow: ellipsis;
-
+  margin-bottom: 5px;
+  font-size: large;
 }
 
 
