@@ -359,6 +359,10 @@ div:first-child{
   cursor: pointer;
 }
 
+.commander_bouton p {
+  margin-bottom: 15px;
+}
+
 
 /*===Footer===*/
 
